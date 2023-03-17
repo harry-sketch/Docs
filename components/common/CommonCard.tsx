@@ -1,4 +1,5 @@
 import React from "react";
+import { cn } from "../../helpers/utils";
 
 interface Props {
   className?: string;
@@ -7,7 +8,10 @@ interface Props {
 const CommonCard = ({ className }) => {
   return (
     <div
-      className={`w-full bg-[#191919] rounded-2xl h-60 grid md:grid-cols-[1fr,1fr] items-center justify-center ${className}`}
+      className={cn(
+        "w-full bg-[#191919] rounded-2xl h-60 grid md:grid-cols-[1fr,1fr] items-center justify-center",
+        className
+      )}
     >
       <div className="p-2">
         <div>Web</div>

@@ -3,21 +3,25 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': 18.11.10
   autoprefixer: ^10.4.14
+  clsx: ^1.2.1
   next: ^13.0.6
   nextra: latest
   nextra-theme-docs: latest
   postcss: ^8.4.21
   react: ^18.2.0
   react-dom: ^18.2.0
+  tailwind-merge: ^1.10.0
   tailwindcss: ^3.2.7
   typescript: ^4.9.3
 
 dependencies:
+  clsx: 1.2.1
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   nextra: 2.2.19_6jx7hpii6hgsrmhxgqrmo3277u
   nextra-theme-docs: 2.2.19_xjieybtjyjwyx5puqtvpxmncqm
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.10.0
 
 devDependencies:
   '@types/node': 18.11.10
@@ -2378,6 +2382,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /tailwind-merge/1.10.0:
+    resolution: {integrity: sha512-WFnDXSS4kFTZwjKg5/oZSGzBRU/l+qcbv5NVTzLUQvJ9yovDAP05h0F2+ZFW0Lw9EcgRoc2AfURUdZvnEFrXKg==}
+    dev: false
 
   /tailwindcss/3.2.7_postcss@8.4.21:
     resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}

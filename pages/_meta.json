@@ -22,7 +22,7 @@
     }
   },
   "addOns": {
-    "title": "APIs & Add-Ons",
+    "title": "APIs",
     "type": "menu",
     "items": {
       "room": {
