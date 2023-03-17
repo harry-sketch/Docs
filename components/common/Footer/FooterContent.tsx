@@ -6,7 +6,7 @@ import FooterIcons from '../../assets/FooterIcons';
 // Components
 import Description from './Description';
 import FooterGrid from './FooterGrid';
-import Social from '../Social/Social';
+import Social from './Social';
 
 const FooterContent: React.FC = () => (
   <div className="flex-col-reverse flex justify-center  md:flex-row  md:w-full md:px-[6rem]">

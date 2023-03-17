@@ -1,5 +1,5 @@
-import ExternalLinks from '../../../helpers/externalLinks';
-import FooterIcons from '../../assets/FooterIcons';
+import ExternalLinks from '../helpers/externalLinks';
+import FooterIcons from './assets/FooterIcons';
 
 export type TSocialDataType = {
   id: number;

@@ -2,6 +2,7 @@ import React from 'react';
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs';
 import { useRouter } from 'next/router';
 import Huddle01 from './components/assets/Huddle01';
+import { Footer } from './components/common/Footer/Footer';
 
 const config: DocsThemeConfig = {
   toc: {

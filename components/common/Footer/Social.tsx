@@ -1,7 +1,7 @@
 import React from 'react';
+import { SocialData } from '../../FooterContent';
 
 // Data
-import { SocialData } from '../FooterData';
 
 const Social = () => (
   <div className="flex items-center space-x-5">

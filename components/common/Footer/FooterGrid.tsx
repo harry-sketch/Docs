@@ -2,10 +2,10 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 // Data
-import { NavigationData } from '../FooterData';
 
 // Types
-import { TNavData } from '../../../types/types';
+
+import { NavigationData, TNavData } from '../../FooterContent';
 
 const FooterGrid: React.FC = () => {
   const router = useRouter();

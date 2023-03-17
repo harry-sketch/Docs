@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Copyright from './Copyright';
+import FooterContent from './FooterContent';
 
 // Components
 
