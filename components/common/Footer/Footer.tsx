@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Copyright from './Copyright';
-import FooterContent from './FooterContent';
+import Link from "next/link";
+import Copyright from "./Copyright";
+import FooterContent from "./FooterContent";
 
 // Components
 
@@ -12,8 +12,8 @@ function FooterLink({
   children: React.ReactNode;
 }) {
   const classes =
-    'text-sm text-gray-500 no-underline betterhover:hover:text-gray-700 betterhover:hover:dark:text-white transition';
-  if (href.startsWith('http')) {
+    "text-sm text-gray-500 no-underline betterhover:hover:text-gray-700 betterhover:hover:dark:text-white transition";
+  if (href.startsWith("http")) {
     return (
       <a href={href} className={classes}>
         {children}
@@ -34,7 +34,7 @@ function FooterHeader({ children }: { children: React.ReactNode }) {
 export function Footer() {
   return (
     <footer
-      className="overflow-x-hidden w-full bg-webRgbColors-9  py-[4.5rem] mob:px-6"
+      className="overflow-x-hidden w-full bg-webRgbColors-9  py-[4.5rem] md:px-6 px-4"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
