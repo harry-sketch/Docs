@@ -3,18 +3,52 @@
     "title": "Home",
     "type": "page"
   },
-  "advanced": {
-    "title": "Advanced",
+  "sdk": {
+    "title": "SDKs",
+    "type": "menu",
+    "items": {
+      "vanilla": {
+        "title": "Vanilla JS",
+        "href": "/sdk/vanilla"
+      },
+      "react": {
+        "title": "ReactJS SDK",
+        "href": "/sdk/react"
+      },
+      "react-native": {
+        "title": "React-Native",
+        "href": "/sdk/react-native"
+      }
+    }
+  },
+  "addOns": {
+    "title": "APIs & Add-Ons",
+    "type": "menu",
+    "items": {
+      "room": {
+        "title": "Room API",
+        "href": "/api/room"
+      },
+      "token": {
+        "title": "Token-Gating API",
+        "href": "/api/token"
+      },
+      "recording": {
+        "title": "Recording API",
+        "href": "/api/recording"
+      },
+      "livestream": {
+        "title": "Livestream API",
+        "href": "/api/livestream"
+      }
+    }
+  },
+  "ecosystem": {
+    "title": "Ecosystem",
     "type": "page"
   },
   "about": {
     "title": "About",
     "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
   }
 }
