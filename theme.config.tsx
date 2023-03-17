@@ -1,16 +1,10 @@
-import React from "react";
-import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
-import { useRouter } from "next/router";
-import Huddle01 from "./components/assets/Huddle01";
-import { Footer } from "./components/common/Footer/Footer";
+import React from 'react';
+import { DocsThemeConfig, useConfig } from 'nextra-theme-docs';
+import { useRouter } from 'next/router';
+import Huddle01 from './components/assets/Huddle01';
+import { Footer } from './components/common/Footer/Footer';
 
 const config: DocsThemeConfig = {
-  toc: {
-    float: true,
-  },
-  feedback: {
-    content: "Question? Give us feedback →",
-  },
   darkMode: false,
   logo: function LogoActual() {
     return (
@@ -39,7 +33,7 @@ const config: DocsThemeConfig = {
         <meta name="og:description" content={frontMatter.description} />
         <meta
           property="og:url"
-          content={`https://doc.huddle01.com${router.asPath}`}
+          content={`https://docs.huddle01.com${router.asPath}`}
         />
         <meta property="og:locale" content="en_IE" />
         <meta property="og:site_name" content="Huddle01Docs" />
@@ -47,14 +41,20 @@ const config: DocsThemeConfig = {
     );
   },
 
+  useNextSeoProps() {
+    return {
+      titleTemplate: `%s – Huddle01's Documentation`,
+    };
+  },
+
   editLink: {
-    text: "Edit this page on GitHub",
+    text: 'Edit this page on GitHub',
   },
   footer: { component: <Footer /> },
   nextThemes: {
-    defaultTheme: "dark",
+    defaultTheme: 'dark',
   },
-  gitTimestamp: false,
+  gitTimestamp: null,
 };
 
 export default config;
