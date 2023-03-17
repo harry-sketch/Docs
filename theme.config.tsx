@@ -1,15 +1,15 @@
-import React from 'react';
-import { DocsThemeConfig, useConfig } from 'nextra-theme-docs';
-import { useRouter } from 'next/router';
-import Huddle01 from './components/assets/Huddle01';
-import { Footer } from './components/common/Footer/Footer';
+import React from "react";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
+import { useRouter } from "next/router";
+import Huddle01 from "./components/assets/Huddle01";
+import { Footer } from "./components/common/Footer/Footer";
 
 const config: DocsThemeConfig = {
   toc: {
     float: true,
   },
   feedback: {
-    content: 'Question? Give us feedback →',
+    content: "Question? Give us feedback →",
   },
   darkMode: false,
   logo: function LogoActual() {
@@ -46,13 +46,15 @@ const config: DocsThemeConfig = {
       </>
     );
   },
+
   editLink: {
-    text: 'Edit this page on GitHub',
+    text: "Edit this page on GitHub",
   },
   footer: { component: <Footer /> },
   nextThemes: {
-    defaultTheme: 'dark',
+    defaultTheme: "dark",
   },
+  gitTimestamp: false,
 };
 
 export default config;
