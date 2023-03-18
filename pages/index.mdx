@@ -6,6 +6,7 @@ import { Tabs, Tab } from "nextra-theme-docs";
 import Card, { Cards } from "@components/Card/Card";
 import CommonCard from "@components/common/CommonCard";
 import { Button } from "@components/common/Button/Button";
+import landingData from "@components/Data/landing.json";
 
 # SDK Overview Section
 
@@ -22,3 +23,10 @@ vision to life. With Huddle01 SDK, the possibilities are endless!
   isRouting
   className="my-7 w-auto px-8"
 />
+
+## SDks
+
+{landingData.map(({type,desc}) => (
+
+<CommonCard type={type} desc={desc} />
+))}
