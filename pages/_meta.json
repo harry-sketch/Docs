@@ -6,7 +6,6 @@
   "sdk": {
     "title": "SDKs",
     "type": "menu",
-    "href": "/sdk",
     "items": {
       "vanilla": {
         "title": "Vanilla JS",
