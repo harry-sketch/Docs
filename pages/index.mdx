@@ -5,6 +5,8 @@ title: "Home"
 import { Tabs, Tab } from "nextra-theme-docs";
 import Card, { Cards } from "@components/Card/Card";
 import CommonCard from "@components/common/CommonCard";
+import { Button } from "@components/common/Button/Button";
+import { useRouter } from "next/router";
 
 # SDK Overview Section
 
@@ -14,30 +16,9 @@ customizable. Whether you're creating a simple video calling app or building
 your own cutting-edge VR filter, our SDK has everything you need to bring your
 vision to life. With Huddle01 SDK, the possibilities are endless!
 
-<div className="mt-8">
-  <Tabs items={["🧑‍💻 Developing", "🚏 Orchestrating", "🗳 Delegating"]}>
-    <Tab className="border text-slate-900">
-      <div className="mb-8">
-        With just a few simple API calls, create unique live and on-demand video
-        experiences that play anywhere and look beautiful, every time, at scale.
-      </div>
-      <div className="mb-4 text-xl font-bold">Guides</div>
-      <Cards num={4}>
-        {Array.from({ length: 4 }).map((i) => (
-          <Card
-            key={i}
-            title="Quickstart"
-            description="Get started building in minutes!"
-            icon="⏱"
-            href="/guides/developing/quickstart"
-          />
-        ))}
-      </Cards>
-    </Tab>
-  </Tabs>
-</div>
-
-{Array.from({length:2}).map((i) => (
-
-<CommonCard className="mt-6" key={i} />
-))}
+<Button
+  url="/getStarted"
+  text="Get Started"
+  isRouting
+  className="my-8 text-3xl font-bold  border-b-2"
+/>
